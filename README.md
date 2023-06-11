@@ -1,2 +1,4 @@
 # glazier-jl
-Rust part of Julia bindings for the Glazier crate
+### ***Work In Progress***
+
+***Status:*** Nothing of value here at this point. I'll update the status with further progress appropirately

@@ -1,0 +1,25 @@
+[package]
+name = "glazier-jl"
+version = "0.1.0"
+edition = "2021"
+authors = ["Chetan Vardhan <chetan.verdhan8@gmail.com>"]
+description = ["Julia binding binding library for glazier"]
+homepage = "https://github.com/VarLad/glazier-jl"
+repository = "https://github.com/VarLad/glazier-jl"
+license = "MIT"
+
+[features]
+julia-1-6 = ["jlrs/julia-1-6"]
+julia-1-7 = ["jlrs/julia-1-7"]
+julia-1-8 = ["jlrs/julia-1-8"]
+julia-1-9 = ["jlrs/julia-1-9"]
+julia-1-10 = ["jlrs/julia-1-10"]
+yggdrasil = ["jlrs/yggdrasil"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[dependencies]
+crate-type = ["cdylib"]
+
+[dependencies]
+rustfft = "6"
+jlrs = { version = "0.18", features = ["ccall", "jlrs-derive", "uv"] }
